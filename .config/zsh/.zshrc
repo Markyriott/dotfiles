@@ -13,7 +13,7 @@ setopt globdots
 setopt extended_glob
 
 # prompt
-PROMPT="[%n@%m] %1~ %% "
+PROMPT="%F{198}[%f%F{251}%n%f%F{198}@%f%F{15}%m%f%F{198}]%f %F{yellow}%1~%f %F{251}%#%f "
 
 # vi mode
 bindkey -v
@@ -32,6 +32,9 @@ alias sourcezsh='source ~/.config/zsh/.zshrc'
 # git aliases
 alias gs='git status'
 alias gl='git log --all --graph'
+
+# ssh aliases
+alias apollo='ssh apollo'
 
 # alias functions
 mcd(){
