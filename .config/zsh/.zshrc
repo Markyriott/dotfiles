@@ -16,7 +16,7 @@ setopt extended_glob
 PROMPT="%F{198}[%f%F{251}%n%f%F{198}@%f%F{15}%m%f%F{198}]%f %F{yellow}%1~%f %F{251}%#%f "
 
 # vi mode
-bindkey -v
+# bindkey -v
 
 # shell integration
 eval "$(fzf --zsh)"
