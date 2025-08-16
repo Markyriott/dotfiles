@@ -13,7 +13,7 @@ setopt globdots
 setopt extended_glob
 
 # prompt
-PROMPT="%F{198}[%f%F{251}%n%f%F{198}@%f%F{15}%m%f%F{198}]%f %F{yellow}%1~%f %F{251}%#%f "
+PROMPT="%F{white}%n%f%F{250}@%f%F{222}%m%f %F{253}%1~%f %F{7}%#%f "
 
 # vi mode
 # bindkey -v
