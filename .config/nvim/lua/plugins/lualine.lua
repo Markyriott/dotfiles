@@ -21,6 +21,7 @@ local conditions = {
   end,
 }
 
+
 local transparentbg = nil
 
 -- Config
@@ -28,9 +29,10 @@ local config = {
   options = {
     component_separators = '',
     section_separators = '',
+    transparent = true,
     theme = {
-      normal = { c = { fg = colors.fg, bg = colors.black} } ,
-      inactive = { c = { fg = colors.fg, bg = colors.black} },
+      normal = { c = { fg = colors.fg, bg = transparentbg } },
+      inactive = { c = { fg = colors.fg, bg = transparentbg} },
     },
   },
  sections = {
@@ -89,7 +91,7 @@ ins_left {
   function()
     return '▊'
   end,
-  color = { fg = colors.bright_yellow }, -- Sets highlighting of component
+  color = { fg = colors.bright_yellow,},-- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 
@@ -101,9 +103,9 @@ ins_left {
   color = function()
     -- auto change color according to neovims mode
     local mode_color = {
-      n = colors.yellow,
+      n = colors.pink,
       i = colors.green,
-      v = colors.blue,
+      v = colors.bright_blue,
       [''] = colors.blue,
       V = colors.blue,
       c = colors.magenta,
@@ -122,7 +124,7 @@ ins_left {
       ['!'] = colors.red,
       t = colors.red,
     }
-    return { fg = mode_color[vim.fn.mode()] or colors.blue }
+    return { fg = mode_color[vim.fn.mode()] or colors.blue, }
   end,
   -- padding = { right = 1 },
 }

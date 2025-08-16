@@ -19,5 +19,5 @@ opt.smartcase = true
 -- etc
 opt.mouse = "a"
 opt.clipboard = "unnamedplus"
-opt.termguicolors = true 
+opt.termguicolors = true
 
