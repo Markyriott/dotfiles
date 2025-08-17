@@ -36,7 +36,7 @@ alias gl='git log --all --graph'
 # ssh aliases
 alias apollo='ssh apollo'
 
-# alias functions
+# alias function
 mcd(){
     mkdir -p "$@" && cd "$@"
 }
