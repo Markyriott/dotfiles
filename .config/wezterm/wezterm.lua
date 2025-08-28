@@ -13,8 +13,8 @@ config = {
     font = wezterm.font("mononoki", {weight = Bold} ),
     font_size = 14,
 
-    window_background_opacity = 0.60,
-    macos_window_background_blur = 10,
+    window_background_opacity = 0.55,
+    macos_window_background_blur = 15,
 
     initial_cols = 100,
     initial_rows = 30
