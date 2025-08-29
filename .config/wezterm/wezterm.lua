@@ -9,12 +9,12 @@ config = {
     window_close_confirmation = "NeverPrompt",
     window_decorations = "RESIZE",
 
-    color_scheme = "Dracula+", --[["Darktooth (base16)",]] --[["Catppuccin Mocha",]]
+    color_scheme = 'Dracula (base16)', --[["Dracula+",]] --[["Darktooth (base16)",]] --[["Catppuccin Mocha",]]
     font = wezterm.font("mononoki", {weight = Bold} ),
     font_size = 14,
 
     window_background_opacity = 0.55,
-    macos_window_background_blur = 15,
+    macos_window_background_blur = 25,
 
     initial_cols = 100,
     initial_rows = 30
