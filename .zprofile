@@ -10,6 +10,7 @@ export SHELL_SESSIONS_DISABLE=1
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/repl_history"
+export REDISCLI_HISTFILE="/dev/null" #Disable redis-cli history
 
 [ $(uname -s) = 'Darwin' ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
