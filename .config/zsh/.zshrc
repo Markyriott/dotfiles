@@ -32,6 +32,7 @@ alias sourcezsh='source ~/.config/zsh/.zshrc'
 # git aliases
 alias gs='git status'
 alias gl='git log --all --graph'
+alias gf='git fetch'
 
 # ssh aliases
 alias apollo='ssh apollo'
