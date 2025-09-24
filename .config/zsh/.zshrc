@@ -48,3 +48,14 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+[ $(uname -s) = 'Linux' ] && export PATH="$PATH:/snap/bin"
+
+# yazi shell wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
