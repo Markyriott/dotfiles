@@ -1,0 +1,26 @@
+[flavor]
+dark = "dracula"
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#8be9fd" },
+
+	# Media
+	{ mime = "{audio,video}/*", fg = "#f1fa8c" },
+
+	# Archives
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ff79c6" },
+
+	# Documents
+	{ mime = "application/{pdf,doc,rtf}", fg = "#50fa7b" },
+
+	# Fallback
+	{ url = "*", fg = "#f8f8f2" },
+	{ url = "*/", fg = "lightred" },
+
+	# TODO: remove
+	{ name = "*", fg = "#f8f8f2" },
+	{ name = "*/", fg = "cyan"}
+]

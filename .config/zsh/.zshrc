@@ -18,8 +18,7 @@ PROMPT="%F{white}%n%f%F{250}@%f%F{222}%m%f %F{253}%1~%f %F{7}%#%f "
 # vi mode
 # bindkey -v
 
-# shell integration
-eval "$(fzf --zsh)"
+export EDITOR="nvim"
 
 # general aliases
 alias ll='ls --color -lah'
@@ -50,6 +49,9 @@ SAVEHIST=1000
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 [ $(uname -s) = 'Linux' ] && export PATH="$PATH:/snap/bin"
+
+# shell integration
+eval "$(fzf --zsh)"
 
 # yazi shell wrapper
 function y() {
