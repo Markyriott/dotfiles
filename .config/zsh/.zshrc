@@ -46,11 +46,8 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 SAVEHIST=1000
 
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-
 # fzf shell integration
 eval "$(fzf --zsh)"
-
 
 # yazi shell wrapper
 function y() {
@@ -61,11 +58,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# WSL snap
-[ $(uname -s) = 'Linux' ] && export PATH="$PATH:/snap/bin"
-
 # bun completions
 [ -s "/home/markh/.bun/_bun" ] && source "/home/markh/.bun/_bun"
 
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"

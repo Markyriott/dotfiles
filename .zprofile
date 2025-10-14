@@ -14,7 +14,15 @@ export REDISCLI_HISTFILE="/dev/null" #Disable redis-cli history
 
 [ $(uname -s) = 'Darwin' ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# WSL add snap and golang to path
+[ $(uname -s) = 'Linux' ] && export PATH="$PATH:/snap/bin:/usr/local/go/bin"
