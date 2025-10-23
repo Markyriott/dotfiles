@@ -27,6 +27,7 @@ alias v='nvim'
 alias fzf='fzf --tmux --preview "cat {}"'
 alias vzsh='v ~/.config/zsh/.zshrc'
 alias sourcezsh='source ~/.config/zsh/.zshrc'
+alias ff='fastfetch'
 
 # git aliases
 alias gs='git status'
