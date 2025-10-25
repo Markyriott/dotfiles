@@ -18,3 +18,4 @@ require("plugins.dracula")
 require("plugins.lualine")
 
 vim.cmd("colorscheme dracula")
+vim.cmd(":hi statusline guibg=NONE")
