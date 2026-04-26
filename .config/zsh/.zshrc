@@ -62,3 +62,4 @@ function y() {
 # bun completions
 [ -s "/home/markh/.bun/_bun" ] && source "/home/markh/.bun/_bun"
 
+#export PATH="$HOME/.local/bin:$PATH"
